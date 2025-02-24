@@ -1,0 +1,131 @@
+.about-us {
+  color: #333;
+  background: #fafafa;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  animation: 1s ease-in-out fadeIn;
+  box-shadow: 0 4px 12px #0000001a;
+}
+
+.about-header h1 {
+  color: tomato;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.8em;
+  font-weight: bold;
+}
+
+.about-header p {
+  text-align: center;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #ff6b6b;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  font-size: 1.8em;
+  display: inline-block;
+}
+
+.our-mission, .why-choose-us, .our-values, .api-connection, .contact-us {
+  margin: 25px 0;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  color: #555;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1.1em;
+  display: flex;
+}
+
+li:before {
+  color: tomato;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+a {
+  color: tomato;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: tomato;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-header h1, h2, li {
+  animation: 1s ease-in-out fadeIn;
+}
+
+.about-header h1 {
+  animation-delay: .2s;
+}
+
+h2 {
+  animation-delay: .4s;
+}
+
+li {
+  animation-delay: .6s;
+}
+
+.about-header, .our-mission, .why-choose-us, .our-values, .api-connection, .contact-us {
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 15px 20px;
+  transition: transform .3s;
+  box-shadow: 0 2px 6px #0000000d;
+}
+
+.about-header:hover, .our-mission:hover, .why-choose-us:hover, .our-values:hover, .api-connection:hover, .contact-us:hover {
+  transform: translateY(-5px);
+}
+
+@media (width <= 768px) {
+  .about-header h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  li {
+    font-size: 1em;
+  }
+
+  .about-header, .our-mission, .why-choose-us, .our-values, .api-connection, .contact-us {
+    padding: 15px;
+  }
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
